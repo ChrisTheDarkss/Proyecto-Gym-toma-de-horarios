@@ -3,3 +3,37 @@
 # 1. Descripción del Cliente y Problema Principal
 
 Contexto General: El gimnasio ha experimentado un crecimiento sostenido en su número de miembros, lo que ha llevado a que sus procesos manuales y su sistema de gestión actual sean insuficientes. La falta de una herramienta centralizada y eficiente está generando problemas con los sistemas, afectando la experiencia del cliente, la eficiencia del personal y la rentabilidad del negocio
+
+# 2. Tipos de Usuarios y Perfiles con Permisos
+
+## Administrador (Dueño)
+
+**Permisos**:
+
+* Gestión completa de usuarios (
+    crear= Nombre, Usuario, Contraseña, Rut, 
+    editar= Usuario, contraseña, 
+    eliminar= Usuario)
+* Administración de membresías y planes
+* Gestión de trabajadores
+* Estadisticas de la cantidad de usuarios por hora y dia 
+* Configuración del sistema = Control de horarios, aforo 
+
+## Trabajadores (Staff)
+
+**Permisos**:
+
+* Verificar estado de membresías
+* Gestionar membresia clientes en el gimnasio
+* Ver cpos de horarios y disponibilidad
+
+## Clientes
+
+**Permisos**:
+
+* Registrarse en el sistema
+* Agendar y des agendar horarios
+* Ver su historial de ingresos
+* Ver estado de su membresía
+
+---
