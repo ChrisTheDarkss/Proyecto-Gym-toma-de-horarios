@@ -49,3 +49,9 @@ Características Técnicas:
 Base de datos MongoDB (Nosql).
 Aplicación web para administración.
 Reddis(Cache) para mayor velocidad
+
+# 4. Datos que se necesitan Guardar
+* Datos de clientes(Nombre, Usuario, Contraseña, Rut)  
+* Membresia (activa, expirada, suspendida)
+* Hora agendada
+* Registro de entrada y salida 
