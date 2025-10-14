@@ -37,3 +37,15 @@ Contexto General: El gimnasio ha experimentado un crecimiento sostenido en su n�
 * Ver estado de su membresía
 
 ---
+3. Definición del MVP (Minimum Viable Product)
+MVP - Versión 1.0 (Incluye)
+Funcionalidades Core:
+Registro de usuarios con datos básicos .
+Gestión de membresías (estados: activa, expirada, suspendida).
+Agendamiento básico de horarios por piso.
+Bloqueo/permiso de acceso desde aplicación.
+Registro de entrada y salida
+Características Técnicas:
+Base de datos MongoDB (Nosql).
+Aplicación web para administración.
+Reddis(Cache) para mayor velocidad
