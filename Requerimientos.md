@@ -62,3 +62,11 @@ Reddis(Cache) para mayor velocidad
 * El agendamiento de hora solo se puede utilizar si tiene una cuenta con membresia activa.
 * Si ya paso la hora especifica o esta en la hora justa, no se puede des-agendar.
 * No se podra agendar horas con anticipacion de mas de 2 meses 
+
+# 6.  Prioridades de Desarrollo
+
+### Alta Prioridad
+* **Gestion de estado de membresía**
+* **Registro de ingresos/salidas**
+* **Agendamiento de horario**
+* **Registro de usuarios**
