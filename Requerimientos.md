@@ -55,3 +55,10 @@ Reddis(Cache) para mayor velocidad
 * Membresia (activa, expirada, suspendida)
 * Hora agendada
 * Registro de entrada y salida 
+
+# 5. Reglas de negocio
+* El desajendamiento de hora actualizara automaticamente el stock de horas disponibles.
+* El agendamiento de hora solo se puede hacer con una hora de anticipación.
+* El agendamiento de hora solo se puede utilizar si tiene una cuenta con membresia activa.
+* Si ya paso la hora especifica o esta en la hora justa, no se puede des-agendar.
+* No se podra agendar horas con anticipacion de mas de 2 meses 
