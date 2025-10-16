@@ -36,7 +36,6 @@ Contexto General: El gimnasio ha experimentado un crecimiento sostenido en su n�
 * Ver su historial de ingresos
 * Ver estado de su membresía
 
----
 # 3. Definición del MVP (Minimum Viable Product)
 
 ## MVP - Versión 1.0 (Incluye)
@@ -107,7 +106,7 @@ Contexto General: El gimnasio ha experimentado un crecimiento sostenido en su n�
     1. El usuario accede a la seccion de "Membresia"
     2. Visualiza el estado de su membresia
   
-    # 8. Requisitos no funcionales 
+# 8. Requisitos no funcionales 
 * Seguridad de los datos de los usuarios
 * La aplicacion funcionara en cualquier dispositivo 
   que tenga accesso a un navegador con internet
@@ -128,6 +127,83 @@ Contexto General: El gimnasio ha experimentado un crecimiento sostenido en su n�
 * Gimnasios municipales (uso público con control de aforo y membresías).
 * Gimnasios privados (pequeñas cadenas o centros independientes).
 * Centros deportivos educativos (liceos, universidades, academias).
+# 11. Propuesta y Forma de Trabajo
+
+## Objetivo del Proyecto
+
+* Desarrollar un sistema web basado en base de datos NoSQL (MongoDB) para gestionar integralmente un gimnasio. El sistema permitirá controlar usuarios, membresías, horarios y accesos de forma eficiente y escalable, mejorando la experiencia del cliente y optimizando los procesos internos del gimnasio.
+
+## Distribución del Equipo y Roles
+
+* Cristóbal Escobar * Líder de Proyecto /Full Stack Developer  
+Responsable de la coordinación general, arquitectura del sistema, diseño e implementación de la base de datos, API REST y lógica de negocio.
+
+* Sebastián Flores/Guido Bardi/Vicente Saavedra  * Desarrolladores/ Full Stack Developer
+Encargado del desarrollo de interfaces para usuarios y administradores: login, registro, perfil, agendamiento, dashboard, apoya tanto en frontend como backend. Encargado de la integración del sistema de huella digital, control de acceso y pruebas.
+
+## Roadmap del Proyecto
+
+### Fase 1: Levantamiento de Requerimientos y Diseño Inicial
+
+Duración: hasta el 21 de octubre
+
+* Validación de requerimientos
+* Planificación de sprints semanales y reuniones de seguimiento
+
+### Fase 2: Desarrollo del MVP  Funcionalidades Básicas
+
+Duración: noviembre  
+Entrega del primer prototipo estimada: Finales de noviembre
+
+Semana 1:
+* Equipo: Configuración del backend conexión a MongoDB
+* Maquetación inicial del frontend (login, registro, dashboard)
+* Implementación inicial del sistema (simulada) y control de acceso
+
+Semana 2:
+* Equipo: Implementación de CRUD de usuarios y membresías con reglas de estado
+*  Desarrollo de perfil de usuario, historial de accesos y vista de membresía
+*  Backend de agendamiento y aplicación de reglas de negocio
+*  Pruebas sobre funcionalidad de agendamiento y validación de restricciones
+
+### Fase 3: Consolidación y Entrega del MVP
+
+Duración: diciembre  
+Entrega del MVP funcional estimada: inicios diciembre
+
+Semana 3:
+* Equipo: Desarrollo de API para entrada/salida 
+*  Implementación de dashboard administrativo (funciones básicas)
+*  Funcionalidad para bloquear o permitir acceso desde la aplicación
+*  Ejecución de pruebas completas con todos los roles del sistema
+
+Semana 4:
+* Todos: Refactorización del código, mejora de funcionalidades y preparación para entrega
+*  Redacción de manuales de usuario, documentación técnica y resolución de errores
+
+### Fase 4: Soporte y Mantenimiento
+
+Duración: enero a marzo
+
+* Soporte técnico durante tres meses posteriores a la entrega
+* Revisión de errores y mejoras menores
+* Reuniones de seguimiento cada dos semanas
+
+## Stack Tecnológico Propuesto
+
+* Base de datos: MongoDB 
+* Api: Redis y Mongoose
+* Backend: Node.js 
+* Frontend: React.js
+* Autenticación
+* Control de acceso: integración simulada o real 
+* Hosting: Render, Vercel y MongoDB Atlas
+
+## Reuniones y Seguimiento
+
+* Reunión semanal para revisión de avances y planificación
+* Duración estimada: entre 30 y 45 minutos
+* Canal sugerido: videollamada o reunión presencial
 
 # 12. Soporte y Mantenimiento
 
