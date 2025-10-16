@@ -104,3 +104,16 @@ Reddis(Cache) para mayor velocidad
   
     # 8. Requisitos no funcionales 
 * Seguridad de los datos de los usuarios
+* La aplicacion funcionara en cualquier dispositivo 
+  que tenga accesso a un navegador con internet
+* El usuario podra agendara hora y la solicitud se procesara en menos de 5 segundos 
+# 10. Alcanze y Presupuesto
+* El sistema busca automatizar la gestión de un gimnasio, centralizando el control de usuarios, membresías, horarios y accesos mediante una base de datos NoSQL (MongoDB).
+* La primera versión (MVP) incluirá los módulos esenciales:
+* Registro y autenticación de usuarios.
+* Gestión de membresías (activas, expiradas, suspendidas).
+* Agendamiento y cancelación de horarios.
+* El sistema podrá implementarse en:
+* Gimnasios municipales (uso público con control de aforo y membresías).
+* Gimnasios privados (pequeñas cadenas o centros independientes).
+* Centros deportivos educativos (liceos, universidades, academias).
