@@ -70,3 +70,34 @@ Reddis(Cache) para mayor velocidad
 * **Registro de ingresos/salidas**
 * **Agendamiento de horario**
 * **Registro de usuarios**
+
+# 7. Flujos Principales
+* 1.Flujo de Autentificacion 
+* Registro de Usuario:
+
+    1. El usuario presiona "Registrarse"
+    2. Ingresa Datos (Nombre, rut, email, contraseña)
+    3. Acepta términos y condiciones
+    4. Acceder a la pantalla principal
+* Inicio de Sesión (Login):
+
+    1. El usuario accede a la pantalla de login.
+    2. Ingresa sus credenciales (email y contraseña).
+    3. Presiona "Iniciar Sesión".
+    4. Si es correcto, accede a la pantalla principal.
+    5. Flujo Alternativo: Si las credenciales son incorrectas, se muestra un mensaje de error.
+* 2.Flujo de Gestión de agendas
+*   Reserva de gimnasio:
+    1. El usuario navega a la seleccion de "Agendar"
+    2. Selecciona los dias y horas disponibles
+    3. Confirma Reserva
+    4. Se le agrega en la pantalla principal
+*   Cancelacion de reserva:
+    1. El usuario accede a la pantalla principal
+    2. Selecciona la reserva que desea cancelar 
+    3. Confirma la cancelacion
+    4. La Reserva se libera y el usuario recibe una notificacion
+* 3.Flujo de Gestion de Membresía
+*   Informacion membresia:
+    1. El usuario accede a la seccion de "Membresia"
+    2. Visualiza el estado de su membresia
