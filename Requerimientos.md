@@ -107,6 +107,12 @@ Reddis(Cache) para mayor velocidad
 * La aplicacion funcionara en cualquier dispositivo 
   que tenga accesso a un navegador con internet
 * El usuario podra agendara hora y la solicitud se procesara en menos de 5 segundos 
+
+# 9. Plazos establecidos 
+* Entrega de requisitos 21/10
+* Primer prototipo ?/11
+* Entre de mvp funcional ?/12 
+
 # 10. Alcanze y Presupuesto
 * El sistema busca automatizar la gestión de un gimnasio, centralizando el control de usuarios, membresías, horarios y accesos mediante una base de datos NoSQL (MongoDB).
 * La primera versión (MVP) incluirá los módulos esenciales:
