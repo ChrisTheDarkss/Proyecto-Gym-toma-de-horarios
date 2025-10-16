@@ -101,3 +101,6 @@ Reddis(Cache) para mayor velocidad
 *   Informacion membresia:
     1. El usuario accede a la seccion de "Membresia"
     2. Visualiza el estado de su membresia
+  
+    # 8. Requisitos no funcionales 
+* Seguridad de los datos de los usuarios
