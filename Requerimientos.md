@@ -123,3 +123,14 @@ Reddis(Cache) para mayor velocidad
 * Gimnasios municipales (uso público con control de aforo y membresías).
 * Gimnasios privados (pequeñas cadenas o centros independientes).
 * Centros deportivos educativos (liceos, universidades, academias).
+
+# 12. Soporte y Mantenimiento
+
+* El sistema contará con un periodo de **soporte técnico gratuito de tres (3) meses posteriores a la entrega del proyecto**.  
+* Durante este periodo se incluirá:  
+  * **Corrección de errores** y fallas detectadas en el funcionamiento normal del sistema.  
+  * **Asistencia técnica** para la instalación, configuración o uso general de la aplicación.  
+  * **Ajustes menores o mejoras de mantenimiento** que no impliquen el desarrollo de nuevas funcionalidades.  
+  * **Atención prioritaria a fallas críticas**, garantizando solución sin costo adicional.  
+* El soporte será brindado mediante **correo electrónico o reuniones virtuales**, según acuerdo con el cliente.  
+* Finalizado el periodo de soporte gratuito, el cliente podrá optar por un **contrato de mantenimiento extendido**, que cubra actualizaciones, mejoras o ampliaciones del sistema según sus necesidades futuras.  
