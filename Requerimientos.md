@@ -134,14 +134,32 @@ Contexto General: El gimnasio ha experimentado un crecimiento sostenido en su n�
 
 # 10. Alcanse y Presupuesto
 * El sistema busca automatizar la gestión de un gimnasio, centralizando el control de usuarios, membresías, horarios y accesos mediante una base de datos NoSQL (MongoDB).
-* La primera versión (MVP) incluirá los módulos esenciales:
+ La primera versión (MVP) incluirá los módulos esenciales:
 * Registro y autenticación de usuarios.
 * Gestión de membresías (activas, expiradas, suspendidas).
 * Agendamiento y cancelación de horarios.
-* El sistema podrá implementarse en:
+ El sistema podrá implementarse en:
 * Gimnasios municipales (uso público con control de aforo y membresías).
 * Gimnasios privados (pequeñas cadenas o centros independientes).
 * Centros deportivos educativos (liceos, universidades, academias).
+
+
+## Futuras Versiones (Excluye del MVP)
+
+### Versión 2.0:
+
+* **Notificaciones push y recordatorios**.
+* **Reportes avanzados y analytics** (métricas de uso, ocupación, ingresos).
+* Sistema de **reserva de equipos** específicos.
+* **Planes de entrenamiento personalizados** (asignados por el staff/entrenador).
+
+### Versión 3.0: 
+
+* **Sistema de logros y gamificación** 
+* **Chat interno con entrenadores** 
+* **Control de progreso físico**
+
+
 # 11. Propuesta y Forma de Trabajo
 
 ## Objetivo del Proyecto
