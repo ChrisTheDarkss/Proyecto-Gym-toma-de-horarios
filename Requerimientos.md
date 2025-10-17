@@ -16,16 +16,16 @@ Contexto General: El gimnasio ha experimentado un crecimiento sostenido en su n�
     eliminar= Usuario)
 * Administración de membresías y planes
 * Gestión de trabajadores
-* Estadisticas de la cantidad de usuarios por hora y dia 
+* Estadísticas de la cantidad de usuarios por hora y día 
 * Configuración del sistema = Control de horarios, aforo 
 
 ## Trabajadores (Staff)
 
-**Permisos**:
+**Permisos**
 
 * Verificar estado de membresías
-* Gestionar membresia clientes en el gimnasio
-* Ver cpos de horarios y disponibilidad
+* Gestiónar membresía clientes en el gimnasio
+* Ver cupos de horarios y disponibilidad
 
 ## Clientes
 
@@ -50,33 +50,33 @@ Contexto General: El gimnasio ha experimentado un crecimiento sostenido en su n�
 
 ### Características Técnicas:
 
-* Base de datos MongoDB (Nosql).
+* Base de datos MongoDB (NoSQL).
 * Aplicación web para administración.
-* Reddis(Cache) para mayor velocidad 
+* Redis(Cache) para mayor velocidad 
 
 # 4. Datos que se necesitan Guardar
 * Datos de clientes(Nombre, Usuario, Contraseña, Rut)  
-* Membresia (activa, expirada, suspendida)
+* Membresía (activa, expirada, suspendida)
 * Hora agendada
 * Registro de entrada y salida 
 
 # 5. Reglas de negocio
-* El desajendamiento de hora actualizara automaticamente el stock de horas disponibles.
+* El desajendamiento de hora actualizará automáticamente el stock de horas disponibles.
 * El agendamiento de hora solo se puede hacer con una hora de anticipación.
-* El agendamiento de hora solo se puede utilizar si tiene una cuenta con membresia activa.
-* Si ya paso la hora especifica o esta en la hora justa, no se puede des-agendar.
-* No se podra agendar horas con anticipacion de mas de 2 meses 
+* El agendamiento de hora solo se puede utilizar si tiene una cuenta con membresía activa.
+* Si ya pasó la hora específica o esta en la hora justa, no se puede desagendar.
+* No se podrá agendar horas con anticipacion de mas de 2 meses 
 
 # 6.  Prioridades de Desarrollo
 
 ### Alta Prioridad
-* **Gestion de estado de membresía**
+* **Gestión de estado de membresía**
 * **Registro de ingresos/salidas**
 * **Agendamiento de horario**
 * **Registro de usuarios**
 
 # 7. Flujos Principales
-* 1.Flujo de Autentificacion 
+* 1.Flujo de Autentificación 
 * Registro de Usuario:
 
     1. El usuario presiona "Registrarse"
@@ -92,32 +92,32 @@ Contexto General: El gimnasio ha experimentado un crecimiento sostenido en su n�
     5. Flujo Alternativo: Si las credenciales son incorrectas, se muestra un mensaje de error.
 * 2.Flujo de Gestión de agendas
 *   Reserva de gimnasio:
-    1. El usuario navega a la seleccion de "Agendar"
+    1. El usuario navega a la selección de "Agendar"
     2. Selecciona los dias y horas disponibles
     3. Confirma Reserva
     4. Se le agrega en la pantalla principal
-*   Cancelacion de reserva:
+*   Cancelación de reserva:
     1. El usuario accede a la pantalla principal
     2. Selecciona la reserva que desea cancelar 
-    3. Confirma la cancelacion
-    4. La Reserva se libera y el usuario recibe una notificacion
-* 3.Flujo de Gestion de Membresía
-*   Informacion membresia:
-    1. El usuario accede a la seccion de "Membresia"
-    2. Visualiza el estado de su membresia
+    3. Confirma la cancelación
+    4. La Reserva se libera y el usuario recibe una notificación
+* 3.Flujo de Gestión de Membresía
+*   Información membresía:
+    1. El usuario accede a la sección de "membresía"
+    2. Visualiza el estado de su membresía
   
 # 8. Requisitos no funcionales 
 * Seguridad de los datos de los usuarios
-* La aplicacion funcionara en cualquier dispositivo 
-  que tenga accesso a un navegador con internet
-* El usuario podra agendara hora y la solicitud se procesara en menos de 5 segundos 
+* La aplicación funcionará en cualquier dispositivo 
+  que tenga acceso a un navegador con internet
+* El usuario podrá agendar una hora y la solicitud se procesara en menos de 5 segundos 
 
 # 9. Plazos establecidos 
 * Entrega de requisitos 21/10
 * Primer prototipo ?/11
-* Entre de mvp funcional ?/12 
+* Entrega de mvp funcional ?/12 
 
-# 10. Alcanze y Presupuesto
+# 10. Alcanse y Presupuesto
 * El sistema busca automatizar la gestión de un gimnasio, centralizando el control de usuarios, membresías, horarios y accesos mediante una base de datos NoSQL (MongoDB).
 * La primera versión (MVP) incluirá los módulos esenciales:
 * Registro y autenticación de usuarios.
@@ -131,15 +131,15 @@ Contexto General: El gimnasio ha experimentado un crecimiento sostenido en su n�
 
 ## Objetivo del Proyecto
 
-* Desarrollar un sistema web basado en base de datos NoSQL (MongoDB) para gestionar integralmente un gimnasio. El sistema permitirá controlar usuarios, membresías, horarios y accesos de forma eficiente y escalable, mejorando la experiencia del cliente y optimizando los procesos internos del gimnasio.
+* Desarrollar un sistema web basado en base de datos NoSQL (MongoDB) para Gestiónar integralmente un gimnasio. El sistema permitirá controlar usuarios, membresías, horarios y accesos de forma eficiente y escalable, mejorando la experiencia del cliente y optimizando los procesos internos del gimnasio.
 
 ## Distribución del Equipo y Roles
 
-* Cristóbal Escobar * Líder de Proyecto /Full Stack Developer  
+Cristóbal Escobar **Líder de Proyecto /Full Stack Developer**  
 Responsable de la coordinación general, arquitectura del sistema, diseño e implementación de la base de datos, API REST y lógica de negocio.
 
-* Sebastián Flores/Guido Bardi/Vicente Saavedra  * Desarrolladores/ Full Stack Developer
-Encargado del desarrollo de interfaces para usuarios y administradores: login, registro, perfil, agendamiento, dashboard, apoya tanto en frontend como backend. Encargado de la integración del sistema de huella digital, control de acceso y pruebas.
+Sebastián Flores/Guido Bardi/Vicente Saavedra **Desarrolladores/Full Stack Developer**
+Encargado del desarrollo de interfaces para usuarios y administradores: login, registro, perfil, agendamiento, dashboard, apoya tanto en frontend como backend, control de acceso y pruebas.
 
 ## Roadmap del Proyecto
 
@@ -192,7 +192,7 @@ Duración: enero a marzo
 ## Stack Tecnológico Propuesto
 
 * Base de datos: MongoDB 
-* Api: Redis y Mongoose
+* API: Redis y Mongoose
 * Backend: Node.js 
 * Frontend: React.js
 * Autenticación
