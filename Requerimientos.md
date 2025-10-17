@@ -81,6 +81,15 @@ Contexto General: El gimnasio ha experimentado un crecimiento sostenido en su n�
 * **Agendamiento de horario**
 * **Registro de usuarios**
 
+### Media Prioridad
+* **Dashboard administrativo**
+* **Control básico de acceso**
+
+### Baja Prioridad
+* **Reportes avanzados**
+* **Integraciones adicionales**
+
+
 # 7. Flujos Principales
 * 1.Flujo de Autentificación 
 * Registro de Usuario:
