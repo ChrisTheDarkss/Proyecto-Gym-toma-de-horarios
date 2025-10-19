@@ -2,13 +2,13 @@
 
 # 1. Descripción del Cliente y Problema Principal
 
-Contexto General: El gimnasio ha experimentado un crecimiento sostenido en su número de miembros, lo que ha llevado a que sus procesos manuales y su sistema de gestión actual sean insuficientes. La falta de una herramienta centralizada y eficiente está generando problemas con los sistemas, afectando la experiencia del cliente, la eficiencia del personal y la rentabilidad del negocio
+Contexto General: El gimnasio ha experimentado un crecimiento sostenido en su número de miembros, lo que ha llevado a que sus procesos manuales y su sistema de gestión actual sean insuficientes. La falta de una herramienta centralizada y eficiente está generando problemas con los sistemas, afectando la experiencia del cliente, la eficiencia del personal y la rentabilidad del negocio.
 ## Problema Principal: Sistema ineficiente que genera:
 
-* Mala gestión de usuarios y membresías
-* Problemas con control de horarios y aforo
-* Poca administración y seguimiento de ingresos
-* Falta de control en el acceso al establecimiento
+* Mala gestión de usuarios y membresías.
+* Problemas con control de horarios y aforo.
+* Poca administración y seguimiento de ingresos.
+* Falta de control en el acceso al establecimiento.
 
 # 2. Tipos de Usuarios y Perfiles con Permisos
 
@@ -16,31 +16,34 @@ Contexto General: El gimnasio ha experimentado un crecimiento sostenido en su n�
 
 **Permisos**:
 
-* Gestión completa de usuarios (
-    crear= Nombre, Usuario, Contraseña, Rut, 
-    editar= Usuario, contraseña, 
-    eliminar= Usuario)
-* Administración de membresías y planes
-* Gestión de trabajadores
-* Estadísticas de la cantidad de usuarios por hora y día 
-* Configuración del sistema = Control de horarios, aforo 
+* Gestión completa de usuarios:
+
+    Crear --> Nombre, Usuario, Contraseña, RUT. 
+
+    Editar --> Usuario, contraseña. 
+    
+    Eliminar --> Usuario.
+* Administración de membresías y planes.
+* Gestión de trabajadores.
+* Estadísticas de la cantidad de usuarios por hora y día. 
+* Configuración del sistema: Control de horarios, aforo. 
 
 ## Trabajadores (Staff)
 
 **Permisos**
 
-* Verificar estado de membresías
-* Gestiónar membresía clientes en el gimnasio
-* Ver cupos de horarios y disponibilidad
+* Verificar estado de membresías.
+* Gestiónar membresía clientes en el gimnasio.
+* Ver cupos de horarios y disponibilidad.
 
 ## Clientes
 
-**Permisos**:
+**Permisos**
 
-* Registrarse en el sistema
-* Agendar y des agendar horarios
-* Ver su historial de ingresos
-* Ver estado de su membresía
+* Registrarse en el sistema.
+* Agendar y des agendar horarios.
+* Ver su historial de ingresos.
+* Ver estado de su membresía.
 
 # 3. Definición del MVP (Minimum Viable Product)
 
@@ -48,96 +51,96 @@ Contexto General: El gimnasio ha experimentado un crecimiento sostenido en su n�
 
 ### Funcionalidades Core:
 
-* Registro de usuarios con datos básicos .
+* Registro de usuarios con datos básicos.
 * Gestión de membresías (estados: activa, expirada, suspendida).
 * Agendamiento básico de horarios por piso.
 * Bloqueo/permiso de acceso desde aplicación.
-* Registro de entrada y salida 
+* Registro de entrada y salida. 
 
 ### Características Técnicas:
 
 * Base de datos MongoDB (NoSQL).
 * Aplicación web para administración.
-* Redis(Cache) para mayor velocidad 
+* Redis(Cache) para mayor velocidad. 
 
 # 4. Datos que se necesitan Guardar
-* Datos de clientes(Nombre, Usuario, Contraseña, Rut)  
-* Membresía (activa, expirada, suspendida)
-* Hora agendada
-* Registro de entrada y salida 
+* Datos de clientes(Nombre, Usuario, Contraseña, RUT).  
+* Membresía (activa, expirada, suspendida).
+* Hora agendada.
+* Registro de entrada y salida. 
 
 # 5. Reglas de negocio
 * El desajendamiento de hora actualizará automáticamente el stock de horas disponibles.
 * El agendamiento de hora solo se puede hacer con una hora de anticipación.
 * El agendamiento de hora solo se puede utilizar si tiene una cuenta con membresía activa.
 * Si ya pasó la hora específica o esta en la hora justa, no se puede desagendar.
-* No se podrá agendar horas con anticipacion de mas de 2 meses 
+* No se podrá agendar horas con anticipacion de mas de 2 meses. 
 
 # 6.  Prioridades de Desarrollo
 
 ### Alta Prioridad
-* **Gestión de estado de membresía**
-* **Registro de ingresos/salidas**
-* **Agendamiento de horario**
-* **Registro de usuarios**
+* Gestión de estado de membresía.
+* Registro de ingresos/salidas.
+* Agendamiento de horario.
+* Registro de usuarios.
 
 ### Media Prioridad
-* **Dashboard administrativo**
-* **Control básico de acceso**
+* Dashboard administrativo.
+* Control básico de acceso.
 
 ### Baja Prioridad
-* **Reportes avanzados**
-* **Integraciones adicionales**
+* Reportes avanzados.
+* Integraciones adicionales.
 
 
 # 7. Flujos Principales
-* 1.Flujo de Autentificación 
-* Registro de Usuario:
+**Flujo de Autentificación** 
+* **Registro de Usuario:**
 
-    1. El usuario presiona "Registrarse"
-    2. Ingresa Datos (Nombre, rut, email, contraseña)
-    3. Acepta términos y condiciones
-    4. Acceder a la pantalla principal
-* Inicio de Sesión (Login):
+    1. El usuario presiona "Registrarse".
+    2. Ingresa Datos (Nombre, RUT, email, contraseña).
+    3. Acepta términos y condiciones.
+    4. Acceder a la pantalla principal.
+* **Inicio de Sesión (Login):**
 
     1. El usuario accede a la pantalla de login.
     2. Ingresa sus credenciales (email y contraseña).
     3. Presiona "Iniciar Sesión".
     4. Si es correcto, accede a la pantalla principal.
     5. Flujo Alternativo: Si las credenciales son incorrectas, se muestra un mensaje de error.
-* 2.Flujo de Gestión de agendas
-*   Reserva de gimnasio:
-    1. El usuario navega a la selección de "Agendar"
-    2. Selecciona los dias y horas disponibles
-    3. Confirma Reserva
-    4. Se le agrega en la pantalla principal
-*   Cancelación de reserva:
-    1. El usuario accede a la pantalla principal
-    2. Selecciona la reserva que desea cancelar 
-    3. Confirma la cancelación
-    4. La Reserva se libera y el usuario recibe una notificación
-* 3.Flujo de Gestión de Membresía
-*   Información membresía:
-    1. El usuario accede a la sección de "membresía"
-    2. Visualiza el estado de su membresía
+* **Flujo de Gestión de agendas:**
+    * Reserva de gimnasio:
+    1. El usuario navega a la selección de "Agendar".
+    2. Selecciona los dias y horas disponibles.
+    3. Confirma Reserva.
+    4. Se le agrega en la pantalla principal.
+*   **Cancelación de reserva:**
+    1. El usuario accede a la pantalla principal.
+    2. Selecciona la reserva que desea cancelar. 
+    3. Confirma la cancelación.
+    4. La Reserva se libera y el usuario recibe una notificación.
+*   **Información membresía:**
+    1. El usuario accede a la sección de "membresía".
+    2. Visualiza el estado de su membresía.
   
 # 8. Requisitos no funcionales 
-* Seguridad de los datos de los usuarios
-* La aplicación funcionará en cualquier dispositivo 
-  que tenga acceso a un navegador con internet
-* El usuario podrá agendar una hora y la solicitud se procesara en menos de 5 segundos 
+* Seguridad de los datos de los usuarios.
+* La aplicación funcionará en cualquier dispositivo que tenga acceso a un navegador con internet.
+* El usuario podrá agendar una hora y la solicitud se procesará en menos de 5 segundos. 
 
 # 9. Plazos establecidos 
 * Entrega de requisitos 21/10
 * Primer prototipo ?/11
-* Entrega de mvp funcional ?/12 
+* Entrega de MVP funcional ?/12 
 
 # 10. Alcanse y Presupuesto
 * El sistema busca automatizar la gestión de un gimnasio, centralizando el control de usuarios, membresías, horarios y accesos mediante una base de datos NoSQL (MongoDB).
+ 
  La primera versión (MVP) incluirá los módulos esenciales:
 * Registro y autenticación de usuarios.
 * Gestión de membresías (activas, expiradas, suspendidas).
 * Agendamiento y cancelación de horarios.
+
  El sistema podrá implementarse en:
 * Gimnasios municipales (uso público con control de aforo y membresías).
 * Gimnasios privados (pequeñas cadenas o centros independientes).
@@ -155,16 +158,16 @@ Contexto General: El gimnasio ha experimentado un crecimiento sostenido en su n�
 
 ### Versión 3.0: 
 
-* **Sistema de logros y gamificación** 
-* **Chat interno con entrenadores** 
-* **Control de progreso físico**
+* Sistema de logros y gamificación
+* Chat interno con entrenadores
+* Control de progreso físico
 
 
 # 11. Propuesta y Forma de Trabajo
 
 ## Objetivo del Proyecto
 
-* Desarrollar un sistema web basado en base de datos NoSQL (MongoDB) para Gestiónar integralmente un gimnasio. El sistema permitirá controlar usuarios, membresías, horarios y accesos de forma eficiente y escalable, mejorando la experiencia del cliente y optimizando los procesos internos del gimnasio.
+* Desarrollar un sistema web basado en base de datos NoSQL (MongoDB) para Gestionar integralmente un gimnasio. El sistema permitirá controlar usuarios, membresías, horarios y accesos de forma eficiente y escalable, mejorando la experiencia del cliente y optimizando los procesos internos del gimnasio.
 
 ## Distribución del Equipo y Roles
 
@@ -180,8 +183,8 @@ Encargado del desarrollo de interfaces para usuarios y administradores: login, r
 
 Duración: hasta el 21 de octubre
 
-* Validación de requerimientos
-* Planificación de sprints semanales y reuniones de seguimiento
+* Validación de requerimientos. 
+* Planificación de sprints semanales y reuniones de seguimiento.
 
 ### Fase 2: Desarrollo del MVP  Funcionalidades Básicas
 
@@ -189,15 +192,15 @@ Duración: noviembre
 Entrega del primer prototipo estimada: Finales de noviembre
 
 Semana 1:
-* Equipo: Configuración del backend conexión a MongoDB
-* Maquetación inicial del frontend (login, registro, dashboard)
-* Implementación inicial del sistema (simulada) y control de acceso
+* Equipo: Configuración del backend conexión a MongoDB.
+* Maquetación inicial del frontend (login, registro, dashboard).
+* Implementación inicial del sistema (simulada) y control de acceso.
 
 Semana 2:
-* Equipo: Implementación de CRUD de usuarios y membresías con reglas de estado
-*  Desarrollo de perfil de usuario, historial de accesos y vista de membresía
-*  Backend de agendamiento y aplicación de reglas de negocio
-*  Pruebas sobre funcionalidad de agendamiento y validación de restricciones
+* Equipo: Implementación de CRUD de usuarios y membresías con reglas de estado.
+*  Desarrollo de perfil de usuario, historial de accesos y vista de membresía.
+*  Backend de agendamiento y aplicación de reglas de negocio.
+*  Pruebas sobre funcionalidad de agendamiento y validación de restricciones.
 
 ### Fase 3: Consolidación y Entrega del MVP
 
@@ -205,32 +208,32 @@ Duración: diciembre
 Entrega del MVP funcional estimada: inicios diciembre
 
 Semana 3:
-* Equipo: Desarrollo de API para entrada/salida 
-*  Implementación de dashboard administrativo (funciones básicas)
-*  Funcionalidad para bloquear o permitir acceso desde la aplicación
-*  Ejecución de pruebas completas con todos los roles del sistema
+* Equipo: Desarrollo de API para entrada/salida. 
+*  Implementación de dashboard administrativo (funciones básicas).
+*  Funcionalidad para bloquear o permitir acceso desde la aplicación.
+*  Ejecución de pruebas completas con todos los roles del sistema.
 
 Semana 4:
-* Todos: Refactorización del código, mejora de funcionalidades y preparación para entrega
-*  Redacción de manuales de usuario, documentación técnica y resolución de errores
+* Todos: Refactorización del código, mejora de funcionalidades y preparación para entrega.
+*  Redacción de manuales de usuario, documentación técnica y resolución de errores.
 
 ### Fase 4: Soporte y Mantenimiento
 
 Duración: enero a marzo
 
-* Soporte técnico durante tres meses posteriores a la entrega
-* Revisión de errores y mejoras menores
-* Reuniones de seguimiento cada dos semanas
+* Soporte técnico durante tres meses posteriores a la entrega.
+* Revisión de errores y mejoras menores.
+* Reuniones de seguimiento cada dos semanas.
 
 ## Stack Tecnológico Propuesto
 
-* Base de datos: MongoDB 
-* API: Redis y Mongoose
-* Backend: Node.js 
-* Frontend: React.js
-* Autenticación
-* Control de acceso: integración simulada o real 
-* Hosting: Render, Vercel y MongoDB Atlas
+* Base de datos: MongoDB. 
+* API: Redis y Mongoose.
+* Backend: Node.js.
+* Frontend: React.js.
+* Autenticación.
+* Control de acceso: integración simulada o real. 
+* Hosting: Render, Vercel y MongoDB Atlas.
 
 ## Reuniones y Seguimiento
 
