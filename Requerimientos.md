@@ -123,10 +123,21 @@ Contexto General: El gimnasio ha experimentado un crecimiento sostenido en su n�
     1. El usuario accede a la sección de "membresía".
     2. Visualiza el estado de su membresía.
   
-# 8. Requisitos no funcionales 
-* Seguridad de los datos de los usuarios.
-* La aplicación funcionará en cualquier dispositivo que tenga acceso a un navegador con internet.
-* El usuario podrá agendar una hora y la solicitud se procesará en menos de 5 segundos. 
+# 8. Requisitos Funcionales & No Funcionales
+
+## Requisitos Funcionales 
+* Registro de usuarios con datos básicos .
+* Gestión de membresías (estados: activa, expirada, suspendida).
+* Agendamiento básico de horarios por piso.
+* Bloqueo/permiso de acceso desde aplicación.
+* Registro de entrada y salida.
+* Sistema de autenticación.
+
+
+## Requisitos no funcionales 
+* Seguridad de los datos de los usuarios
+* La aplicación funcionará en cualquier dispositivo que tenga acceso a un navegador con internet 
+* El usuario podrá agendar una hora y la solicitud se procesara en menos de 5 segundos 
 
 # 9. Plazos establecidos 
 * Entrega de requisitos 21/10
