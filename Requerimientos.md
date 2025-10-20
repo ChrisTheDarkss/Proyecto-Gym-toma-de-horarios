@@ -187,11 +187,33 @@ La estructura de pagos del proyecto es la siguiente:
 
 ## Distribución del Equipo y Roles
 
-Cristóbal Escobar **Líder de Proyecto /Full Stack Developer**  
-Responsable de la coordinación general, arquitectura del sistema, diseño e implementación de la base de datos, API REST y lógica de negocio.
+**Cristóbal Escobar**
+* **Rol:** Líder de Proyecto / Full Stack Developer
+* **Responsabilidades:**
+    * Coordinación general del proyecto.
+    * Arquitectura del sistema y diseño de la base de datos.
+    * Desarrollo de la API REST y lógica de negocio (Backend).
 
-Sebastián Flores/Guido Bardi/Vicente Saavedra **Desarrolladores/Full Stack Developer**
-Encargado del desarrollo de interfaces para usuarios y administradores: login, registro, perfil, agendamiento, dashboard, apoya tanto en frontend como backend, control de acceso y pruebas.
+**Sebastián Flores**
+* **Rol:** Desarrollador Full Stack
+* **Responsabilidades:**
+    * Desarrollo de interfaces de usuario (Frontend).
+    * Implementación de flujos de cliente (Login, registro, perfil).
+    * Apoyo en lógica de agendamiento y Backend.
+
+**Guido Bardi**
+* **Rol:** Desarrollador Full Stack
+* **Responsabilidades:**
+    * Desarrollo de interfaces de administración (Frontend).
+    * Implementación del Dashboard administrativo.
+    * Apoyo en lógica de control de acceso y Backend.
+
+**Vicente Saavedra**
+* **Rol:** Desarrollador Full Stack
+* **Responsabilidades:**
+    * Encargado de Pruebas (QA) y testing de flujos.
+    * Apoyo en la integración de frontend y backend.
+    * Revisión de control de acceso.
 
 ## Roadmap del Proyecto
 
@@ -207,12 +229,12 @@ Duración: hasta el 21 de octubre
 Duración: noviembre  
 Entrega del primer prototipo estimada: Finales de noviembre
 
-Semana 1:
+Semana 1 y 2:
 * Equipo: Configuración del backend conexión a MongoDB.
 * Maquetación inicial del frontend (login, registro, dashboard).
 * Implementación inicial del sistema (simulada) y control de acceso.
 
-Semana 2:
+Semana 3 y 4:
 * Equipo: Implementación de CRUD de usuarios y membresías con reglas de estado.
 *  Desarrollo de perfil de usuario, historial de accesos y vista de membresía.
 *  Backend de agendamiento y aplicación de reglas de negocio.
@@ -223,13 +245,13 @@ Semana 2:
 Duración: diciembre  
 Entrega del MVP funcional estimada: inicios diciembre
 
-Semana 3:
+Semana 1:
 * Equipo: Desarrollo de API para entrada/salida. 
 *  Implementación de dashboard administrativo (funciones básicas).
 *  Funcionalidad para bloquear o permitir acceso desde la aplicación.
 *  Ejecución de pruebas completas con todos los roles del sistema.
 
-Semana 4:
+Semana 2:
 * Todos: Refactorización del código, mejora de funcionalidades y preparación para entrega.
 *  Redacción de manuales de usuario, documentación técnica y resolución de errores.
 
@@ -243,13 +265,25 @@ Duración: enero a marzo
 
 ## Stack Tecnológico Propuesto
 
-* Base de datos: MongoDB. 
-* API: Redis y Mongoose.
-* Backend: Node.js.
-* Frontend: React.js.
-* Autenticación.
-* Control de acceso: integración simulada o real. 
-* Hosting: Render, Vercel y MongoDB Atlas.
+### Backend
+* **Entorno de ejecución:** Node.js.
+* **Framework:** Express.js.
+* **ODM (Object Data Modeling):** Mongoose (Para interactuar de forma segura con MongoDB).
+* **Caché:** Redis (Para optimizar la velocidad de consultas frecuentes).
+
+### Frontend
+* **Librería:** React.js.
+
+### Base de Datos
+* **Sistema:** MongoDB.
+
+### Autenticación
+* **Método:** JWT (JSON Web Tokens).
+
+### Plataformas de Despliegue (Hosting)
+* **Backend (API):** Render.
+* **Frontend:** Vercel.
+* **Base de Datos:** MongoDB Atlas.
 
 ## Reuniones y Seguimiento
 
