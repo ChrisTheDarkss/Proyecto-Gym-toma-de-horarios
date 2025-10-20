@@ -61,7 +61,7 @@ Contexto General: El gimnasio ha experimentado un crecimiento sostenido en su n�
 
 * Base de datos MongoDB (NoSQL).
 * Aplicación web para administración.
-* Redis(Cache) para mayor velocidad. 
+* Redis(Caché) para mayor velocidad. 
 
 # 4. Datos que se necesitan Guardar
 * Datos de clientes(Nombre, Usuario, Contraseña, RUT).  
@@ -73,8 +73,8 @@ Contexto General: El gimnasio ha experimentado un crecimiento sostenido en su n�
 * El desajendamiento de hora actualizará automáticamente el stock de horas disponibles.
 * El agendamiento de hora solo se puede hacer con una hora de anticipación.
 * El agendamiento de hora solo se puede utilizar si tiene una cuenta con membresía activa.
-* Si ya pasó la hora específica o esta en la hora justa, no se puede desagendar.
-* No se podrá agendar horas con anticipacion de mas de 2 meses. 
+* Si ya pasó la hora específica o está en la hora justa, no se puede desagendar.
+* No se podrá agendar horas con anticipación de mas de 2 meses. 
 
 # 6.  Prioridades de Desarrollo
 
@@ -109,9 +109,9 @@ Contexto General: El gimnasio ha experimentado un crecimiento sostenido en su n�
     4. Si es correcto, accede a la pantalla principal.
     5. Flujo Alternativo: Si las credenciales son incorrectas, se muestra un mensaje de error.
 * **Flujo de Gestión de agendas:**
-    * Reserva de gimnasio:
+    * **Reserva de gimnasio:**
     1. El usuario navega a la selección de "Agendar".
-    2. Selecciona los dias y horas disponibles.
+    2. Selecciona los días y horas disponibles.
     3. Confirma Reserva.
     4. Se le agrega en la pantalla principal.
 *   **Cancelación de reserva:**
@@ -135,16 +135,16 @@ Contexto General: El gimnasio ha experimentado un crecimiento sostenido en su n�
 
 
 ## Requisitos no funcionales 
-* Seguridad de los datos de los usuarios
-* La aplicación funcionará en cualquier dispositivo que tenga acceso a un navegador con internet 
-* El usuario podrá agendar una hora y la solicitud se procesara en menos de 5 segundos 
+* Seguridad de los datos de los usuarios.
+* La aplicación funcionará en cualquier dispositivo que tenga acceso a un navegador con internet. 
+* El usuario podrá agendar una hora y la solicitud se procesará en menos de 5 segundos. 
 
 # 9. Plazos establecidos 
 * Entrega de requisitos 21/10
 * Primer prototipo ?/11
 * Entrega de MVP funcional ?/12 
 
-# 10. Alcanse y Presupuesto
+# 10. Alcance y Presupuesto
 El sistema busca automatizar la gestión de un gimnasio, centralizando el control de usuarios, membresías, horarios y accesos mediante una base de datos NoSQL (MongoDB).
  
  La primera versión (MVP) incluirá los módulos esenciales:
@@ -183,7 +183,7 @@ La estructura de pagos del proyecto es la siguiente:
 
 ## Objetivo del Proyecto
 
-* Desarrollar un sistema web basado en base de datos NoSQL (MongoDB) para Gestionar integralmente un gimnasio. El sistema permitirá controlar usuarios, membresías, horarios y accesos de forma eficiente y escalable, mejorando la experiencia del cliente y optimizando los procesos internos del gimnasio.
+* Desarrollar un sistema web basado en base de datos NoSQL (MongoDB) para gestionar integralmente un gimnasio. El sistema permitirá controlar usuarios, membresías, horarios y accesos de forma eficiente y escalable, mejorando la experiencia del cliente y optimizando los procesos internos del gimnasio.
 
 ## Distribución del Equipo y Roles
 
