@@ -70,7 +70,8 @@ Contexto General: El gimnasio ha experimentado un crecimiento sostenido en su n�
 * Registro de entrada y salida. 
 
 # 5. Reglas de negocio
-* El desajendamiento de hora actualizará automáticamente el stock de horas disponibles.
+* La cancelacion de una hora actualizará
+automáticamente el stock de horas disponibles.
 * El agendamiento de hora solo se puede hacer con una hora de anticipación.
 * El agendamiento de hora solo se puede utilizar si tiene una cuenta con membresía activa.
 * Si ya pasó la hora específica o esta en la hora justa, no se puede desagendar.
