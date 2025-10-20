@@ -2,7 +2,13 @@
 
 # 1. Descripción del Cliente y Problema Principal
 
-Contexto General: El gimnasio ha experimentado un crecimiento sostenido en su número de miembros, lo que ha llevado a que sus procesos manuales y su sistema de gestión actual sean insuficientes. La falta de una herramienta centralizada y eficiente está generando problemas con los sistemas, afectando la experiencia del cliente, la eficiencia del personal y la rentabilidad del negocio
+Contexto General: El gimnasio ha experimentado un crecimiento sostenido en su número de miembros, lo que ha llevado a que sus procesos manuales y su sistema de gestión actual sean insuficientes. La falta de una herramienta centralizada y eficiente está generando problemas con los sistemas, afectando la experiencia del cliente, la eficiencia del personal y la rentabilidad del negocio.
+## Problema Principal: Sistema ineficiente que genera:
+
+* Mala gestión de usuarios y membresías.
+* Problemas con control de horarios y aforo.
+* Poca administración y seguimiento de ingresos.
+* Falta de control en el acceso al establecimiento.
 
 # 2. Tipos de Usuarios y Perfiles con Permisos
 
@@ -10,76 +16,93 @@ Contexto General: El gimnasio ha experimentado un crecimiento sostenido en su n�
 
 **Permisos**:
 
-* Gestión completa de usuarios (
-    crear= Nombre, Usuario, Contraseña, Rut, 
-    editar= Usuario, contraseña, 
-    eliminar= Usuario)
-* Administración de membresías y planes
-* Gestión de trabajadores
-* Estadisticas de la cantidad de usuarios por hora y dia 
-* Configuración del sistema = Control de horarios, aforo 
+* Gestión completa de usuarios:
+
+    Crear --> Nombre, Usuario, Contraseña, RUT. 
+
+    Editar --> Usuario, contraseña. 
+    
+    Eliminar --> Usuario.
+* Administración de membresías y planes.
+* Gestión de trabajadores.
+* Estadísticas de la cantidad de usuarios por hora y día. 
+* Configuración del sistema: Control de horarios, aforo. 
 
 ## Trabajadores (Staff)
 
-**Permisos**:
+**Permisos**
 
-* Verificar estado de membresías
-* Gestionar membresia clientes en el gimnasio
-* Ver cpos de horarios y disponibilidad
+* Verificar estado de membresías.
+* Gestiónar membresía clientes en el gimnasio.
+* Ver cupos de horarios y disponibilidad.
 
 ## Clientes
 
-**Permisos**:
+**Permisos**
 
-* Registrarse en el sistema
-* Agendar y des agendar horarios
-* Ver su historial de ingresos
-* Ver estado de su membresía
+* Registrarse en el sistema.
+* Agendar y des agendar horarios.
+* Ver su historial de ingresos.
+* Ver estado de su membresía.
 
----
-3. Definición del MVP (Minimum Viable Product)
-MVP - Versión 1.0 (Incluye)
-Funcionalidades Core:
-Registro de usuarios con datos básicos .
-Gestión de membresías (estados: activa, expirada, suspendida).
-Agendamiento básico de horarios por piso.
-Bloqueo/permiso de acceso desde aplicación.
-Registro de entrada y salida
-Características Técnicas:
-Base de datos MongoDB (Nosql).
-Aplicación web para administración.
-Reddis(Cache) para mayor velocidad
+# 3. Definición del MVP (Minimum Viable Product)
+
+## MVP - Versión 1.0 (Incluye)
+
+### Funcionalidades Core:
+
+* Registro de usuarios con datos básicos.
+* Gestión de membresías (estados: activa, expirada, suspendida).
+* Agendamiento básico de horarios por piso.
+* Bloqueo/permiso de acceso desde aplicación.
+* Registro de entrada y salida. 
+
+### Características Técnicas:
+
+* Base de datos MongoDB (NoSQL).
+* Aplicación web para administración.
+* Redis(Caché) para mayor velocidad. 
 
 # 4. Datos que se necesitan Guardar
-* Datos de clientes(Nombre, Usuario, Contraseña, Rut)  
-* Membresia (activa, expirada, suspendida)
-* Hora agendada
-* Registro de entrada y salida 
+* Datos de clientes(Nombre, Usuario, Contraseña, RUT).  
+* Membresía (activa, expirada, suspendida).
+* Hora agendada.
+* Registro de entrada y salida. 
 
 # 5. Reglas de negocio
-* El desajendamiento de hora actualizara automaticamente el stock de horas disponibles.
+* La cancelacion de una hora actualizará
+automáticamente el stock de horas disponibles.
 * El agendamiento de hora solo se puede hacer con una hora de anticipación.
-* El agendamiento de hora solo se puede utilizar si tiene una cuenta con membresia activa.
-* Si ya paso la hora especifica o esta en la hora justa, no se puede des-agendar.
-* No se podra agendar horas con anticipacion de mas de 2 meses 
+* El agendamiento de hora solo se puede utilizar si tiene una cuenta con membresía activa.
+* Si ya pasó la hora específica o está en la hora justa, no se puede desagendar.
+* No se podrá agendar horas con anticipación de mas de 2 meses. 
 
 # 6.  Prioridades de Desarrollo
 
 ### Alta Prioridad
-* **Gestion de estado de membresía**
-* **Registro de ingresos/salidas**
-* **Agendamiento de horario**
-* **Registro de usuarios**
+* Gestión de estado de membresía.
+* Registro de ingresos/salidas.
+* Agendamiento de horario.
+* Registro de usuarios.
+
+### Media Prioridad
+* Dashboard administrativo.
+* Control básico de acceso.
+
+### Baja Prioridad
+* Reportes avanzados.
+* Integraciones adicionales.
+
 
 # 7. Flujos Principales
-* 1.Flujo de Autentificacion 
-* Registro de Usuario:
+**Flujo de Autentificación** 
+* **Registro de Usuario:**
 
-    1. El usuario presiona "Registrarse"
-    2. Ingresa Datos (Nombre, rut, email, contraseña)
-    3. Acepta términos y condiciones
-    4. Acceder a la pantalla principal
-* Inicio de Sesión (Login):
+    1. El usuario presiona "Registrarse".
+    2. Ingresa Datos (Nombre, RUT, email, contraseña).
+    3. Acepta términos y condiciones.
+    4. Acceder a la pantalla principal.
+* **Inicio de Sesión (Login):**
 
     1. El usuario accede a la pantalla de login.
     2. Ingresa sus credenciales (email y contraseña).
@@ -91,7 +114,7 @@ Reddis(Cache) para mayor velocidad
     1. El usuario navega a la seleccion de "Agendar"
     2. Selecciona los dias y horas disponibles
     3. Confirma Reserva
-    4. La reserva se muestra en la pantalla principal.
+    4. Se le agrega en la pantalla principal
 *   Cancelacion de reserva:
     1. El usuario accede a la pantalla principal
     2. Selecciona la reserva que desea cancelar 
