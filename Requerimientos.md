@@ -145,7 +145,7 @@ Contexto General: El gimnasio ha experimentado un crecimiento sostenido en su n�
 * Entrega de MVP funcional ?/12 
 
 # 10. Alcanse y Presupuesto
-* El sistema busca automatizar la gestión de un gimnasio, centralizando el control de usuarios, membresías, horarios y accesos mediante una base de datos NoSQL (MongoDB).
+El sistema busca automatizar la gestión de un gimnasio, centralizando el control de usuarios, membresías, horarios y accesos mediante una base de datos NoSQL (MongoDB).
  
  La primera versión (MVP) incluirá los módulos esenciales:
 * Registro y autenticación de usuarios.
@@ -156,7 +156,12 @@ Contexto General: El gimnasio ha experimentado un crecimiento sostenido en su n�
 * Gimnasios municipales (uso público con control de aforo y membresías).
 * Gimnasios privados (pequeñas cadenas o centros independientes).
 * Centros deportivos educativos (liceos, universidades, academias).
+## Presupuesto
+La estructura de pagos del proyecto es la siguiente:
 
+* **Pago Inicial (Anticipo):** Se realizará un primer pago de **1.232.800 CLP** al momento de la firma de este documento.
+* **Segundo Pago (Hito 50%):** Se realizará un segundo pago de **2.465.600 CLP** al completar el 50% de avance del proyecto.
+* **Pago Final (Entrega):** Se pagará el saldo final de **2.465.600 CLP** con la entrega del software (MVP) funcional.
 
 ## Futuras Versiones (Excluye del MVP)
 
