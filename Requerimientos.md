@@ -91,7 +91,7 @@ Reddis(Cache) para mayor velocidad
     1. El usuario navega a la seleccion de "Agendar"
     2. Selecciona los dias y horas disponibles
     3. Confirma Reserva
-    4. Se le agrega en la pantalla principal
+    4. La reserva se muestra en la pantalla principal.
 *   Cancelacion de reserva:
     1. El usuario accede a la pantalla principal
     2. Selecciona la reserva que desea cancelar 
