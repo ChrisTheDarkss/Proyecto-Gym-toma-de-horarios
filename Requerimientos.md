@@ -160,9 +160,32 @@ El sistema busca automatizar la gestión de un gimnasio, centralizando el contro
 ## Presupuesto
 La estructura de pagos del proyecto es la siguiente:
 
-* **Pago Inicial (Anticipo):** Se realizará un primer pago de **1.232.800 CLP** al momento de la firma de este documento.
-* **Segundo Pago (Hito 50%):** Se realizará un segundo pago de **2.465.600 CLP** al completar el 50% de avance del proyecto.
-* **Pago Final (Entrega):** Se pagará el saldo final de **2.465.600 CLP** con la entrega del software (MVP) funcional.
+**Lider de proyecto/Full Stack Developer:** Arquitectura, backend(API REST) y coordinacion  con una Salario 851.250 CLP por 113.5 Hrs. de trabajo.
+
+**Desarrollador Full Stack:** Frontend(interfaces de usuario), flujo de cliente y dashboard con un salario de 731.250 CLP por 97,5 Hrs de trabajo.
+
+**Desarollo Full Stack/QA:** Pruebas (QA), integracion y revisión de control de acceso con un salario de 686.250 CLP por 91,5 Hrs de trabajo.
+
+**Tarifa Desarrollador: 7.500 CLP/Hrs**
+
+**Costo total del proyecto:** Desarrollo del MVP es de 3.000.000 CLP  (400 Horas de trabajo estimadas).
+* **Pago Inicial (Anticipo):** Se realizará un primer pago de **900.000 CLP** al momento de la firma de este documento.
+* **Segundo Pago (Hito 50%):** Se realizará un segundo pago de **1.200.000 CLP** al completar el 50% de avance del proyecto(Backend + Frontend integrado y básico).
+* **Pago Final (Entrega):** Se pagará el saldo final de **900.000 CLP** con la entrega del software (MVP) funcional.
+
+## Costos operativos 
+**Plan initial** 
+* Backend Render Plan "Starter" Costo $7 USD / Mes.
+* Base de Datos MongoDB Atlas: Plan "M2" Costo $9 USD / Mes.
+* Caché Render Redis: Plan "Starter" Costo $10 USD / Mes. 
+
+**Plan advance**
+* Backend Render: Plan "Junior" Costo $15 USD / Mes.
+* Base de Datos MongoDB Atlas: Plan "M3" Costo $57 USD / Mes.
+* Caché (Render Redis): Plan "Junior" Costo $10 USD / Mes.
+
+Los costos operacionales son mensuales y no están incluidos en los costos del proyecto y serán pagados por el cliente.
+
 
 ## Futuras Versiones (Excluye del MVP)
 
