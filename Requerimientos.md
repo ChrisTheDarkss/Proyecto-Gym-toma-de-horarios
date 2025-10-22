@@ -140,7 +140,7 @@ El sistema debe rechazar reservas duplicadas para un mismo usuario en un mismo s
 * Registro de usuarios con datos básicos .
 * Gestión de membresías (estados: activa, expirada, suspendida).
 * Agendamiento básico de horarios por piso.
-* Bloqueo/permiso de acceso desde aplicación.
+* Bloqueo/permiso de acceso al usuario.
 * Registro de entrada y salida.
 * Sistema de autenticación.
 
