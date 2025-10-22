@@ -45,17 +45,17 @@ Contexto General: El gimnasio ha experimentado un crecimiento sostenido en su n�
 * Ver su historial de ingresos.
 * Ver estado de su membresía.
 
-# 3. Definición del MVP (Minimum Viable Product)
+# 3. Definición del MVP- Versión 1.0 (Incluye):
 
-## MVP - Versión 1.0 (Incluye)
+* El MVP se centra en las funcionalidades esenciales para la gestión operativa.
 
 ### Funcionalidades Core:
 
 * Registro de usuarios con datos básicos.
 * Gestión de membresías (estados: activa, expirada, suspendida).
-* Agendamiento básico de horarios por piso.
-* Bloqueo/permiso de acceso desde aplicación.
-* Registro de entrada y salida. 
+* Agendamiento básico de horarios.
+* Bloqueo/permiso de acceso desde aplicación(Control Básico).
+* Registro de entrada y salida(Control de asistencia ). 
 
 ### Características Técnicas:
 
