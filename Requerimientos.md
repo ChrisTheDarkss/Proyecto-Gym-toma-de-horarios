@@ -76,6 +76,16 @@ automáticamente el stock de horas disponibles.
 * El agendamiento de hora solo se puede utilizar si tiene una cuenta con membresía activa.
 * Si ya pasó la hora específica o está en la hora justa, no se puede desagendar.
 * No se podrá agendar horas con anticipación de mas de 2 meses. 
+* No se podrán agendar horas si no quedan cupos disponibles.
+* Si ya pasó la hora específica o está en curso, no se podrá cancelar ni modificar la reserva.
+* Toda reserva será automáticamente cancelada y liberada si la membresía del usuario se encuentra inactiva (expirada o suspendida).
+* No se permitirá el acceso al gimnasio si la membresía del usuario está expirada o suspendida. El sistema debe validar automáticamente el estado de la membresía en cada registro de entrada.
+* El sistema deberá garantizar la persistencia de los datos frente a cortes de energía o fallas del servidor.
+* En caso de corte eléctrico prolongado, el sistema mostrará un mensaje informando la indisponibilidad temporal.
+* Los registros de entrada y salida con más de 12 meses de antigüedad serán archivados automáticamente en una colección separada para optimizar el rendimiento de la base de datos.
+* No se podrá registrar una salida si el usuario no posee una entrada activa registrada el usuario tendrá que hablar con staff para agregar la entrada manualmente.
+* Un usuario no puede tener más de una reserva activa en el mismo horario y día. 
+El sistema debe rechazar reservas duplicadas para un mismo usuario en un mismo slot horario.
 
 # 6.  Prioridades de Desarrollo
 
