@@ -94,10 +94,14 @@ El sistema debe rechazar reservas duplicadas para un mismo usuario en un mismo s
 * Registro de ingresos/salidas.
 * Agendamiento de horario.
 * Registro de usuarios.
+* Validación automática de membresías en acceso.
 
 ### Media Prioridad
 * Dashboard administrativo.
 * Control básico de acceso.
+* Sistema de notificaciones básico (email):
+    confirmación de reserva, recordatorio de cita, 
+    cancelación, membresía por expirar
 
 ### Baja Prioridad
 * Reportes avanzados.
