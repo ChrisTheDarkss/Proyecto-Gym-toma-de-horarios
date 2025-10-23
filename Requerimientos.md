@@ -155,9 +155,9 @@ El sistema debe rechazar reservas duplicadas para un mismo usuario en un mismo s
 * El usuario podrá agendar una hora y la solicitud se procesará en menos de 5 segundos. 
 
 # 9. Plazos establecidos 
-* Entrega de requisitos 21/10
-* Primer prototipo ?/11
-* Entrega de MVP funcional ?/12 
+* Entrega de Requisitos: 21/10
+* Primer Prototipo: Finales de Noviembre (estimado)
+* Entrega de MVP Funcional: Inicios de Diciembre (estimado)
 
 # 10. Alcance y Presupuesto
 El sistema busca automatizar la gestión de un gimnasio, centralizando el control de usuarios, membresías, horarios y accesos mediante una base de datos NoSQL (MongoDB).
