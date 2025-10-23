@@ -94,10 +94,14 @@ El sistema debe rechazar reservas duplicadas para un mismo usuario en un mismo s
 * Registro de ingresos/salidas.
 * Agendamiento de horario.
 * Registro de usuarios.
+* Validación automática de membresías en acceso.
 
 ### Media Prioridad
 * Dashboard administrativo.
 * Control básico de acceso.
+* Sistema de notificaciones básico (email):
+    confirmación de reserva, recordatorio de cita, 
+    cancelación, membresía por expirar
 
 ### Baja Prioridad
 * Reportes avanzados.
@@ -170,9 +174,32 @@ El sistema busca automatizar la gestión de un gimnasio, centralizando el contro
 ## Presupuesto
 La estructura de pagos del proyecto es la siguiente:
 
-* **Pago Inicial (Anticipo):** Se realizará un primer pago de **1.232.800 CLP** al momento de la firma de este documento.
-* **Segundo Pago (Hito 50%):** Se realizará un segundo pago de **2.465.600 CLP** al completar el 50% de avance del proyecto.
-* **Pago Final (Entrega):** Se pagará el saldo final de **2.465.600 CLP** con la entrega del software (MVP) funcional.
+**Lider de proyecto/Full Stack Developer:** Arquitectura, backend(API REST) y coordinacion  con una Salario 851.250 CLP por 113.5 Hrs. de trabajo.
+
+**Desarrollador Full Stack:** Frontend(interfaces de usuario), flujo de cliente y dashboard con un salario de 731.250 CLP por 97,5 Hrs de trabajo.
+
+**Desarollo Full Stack/QA:** Pruebas (QA), integracion y revisión de control de acceso con un salario de 686.250 CLP por 91,5 Hrs de trabajo.
+
+**Tarifa Desarrollador: 7.500 CLP/Hrs**
+
+**Costo total del proyecto:** Desarrollo del MVP es de 3.000.000 CLP  (400 Horas de trabajo estimadas).
+* **Pago Inicial (Anticipo):** Se realizará un primer pago de **900.000 CLP** al momento de la firma de este documento.
+* **Segundo Pago (Hito 50%):** Se realizará un segundo pago de **1.200.000 CLP** al completar el 50% de avance del proyecto(Backend + Frontend integrado y básico).
+* **Pago Final (Entrega):** Se pagará el saldo final de **900.000 CLP** con la entrega del software (MVP) funcional.
+
+## Costos operativos 
+**Plan initial** 
+* Backend Render Plan "Starter" Costo $7 USD / Mes.
+* Base de Datos MongoDB Atlas: Plan "M2" Costo $9 USD / Mes.
+* Caché Render Redis: Plan "Starter" Costo $10 USD / Mes. 
+
+**Plan advance**
+* Backend Render: Plan "Junior" Costo $15 USD / Mes.
+* Base de Datos MongoDB Atlas: Plan "M3" Costo $57 USD / Mes.
+* Caché (Render Redis): Plan "Junior" Costo $10 USD / Mes.
+
+Los costos operacionales son mensuales y no están incluidos en los costos del proyecto y serán pagados por el cliente.
+
 
 ## Futuras Versiones (Excluye del MVP)
 
@@ -228,51 +255,10 @@ La estructura de pagos del proyecto es la siguiente:
 
 ## Roadmap del Proyecto
 
-### Fase 1: Levantamiento de Requerimientos y Diseño Inicial
-
-Duración: hasta el 21 de octubre
-
-* Validación de requerimientos. 
-* Planificación de sprints semanales y reuniones de seguimiento.
-
-### Fase 2: Desarrollo del MVP  Funcionalidades Básicas
-
-Duración: noviembre  
-Entrega del primer prototipo estimada: Finales de noviembre
-
-Semana 1 y 2:
-* Equipo: Configuración del backend conexión a MongoDB.
-* Maquetación inicial del frontend (login, registro, dashboard).
-* Implementación inicial del sistema (simulada) y control de acceso.
-
-Semana 3 y 4:
-* Equipo: Implementación de CRUD de usuarios y membresías con reglas de estado.
-*  Desarrollo de perfil de usuario, historial de accesos y vista de membresía.
-*  Backend de agendamiento y aplicación de reglas de negocio.
-*  Pruebas sobre funcionalidad de agendamiento y validación de restricciones.
-
-### Fase 3: Consolidación y Entrega del MVP
-
-Duración: diciembre  
-Entrega del MVP funcional estimada: inicios diciembre
-
-Semana 1:
-* Equipo: Desarrollo de API para entrada/salida. 
-*  Implementación de dashboard administrativo (funciones básicas).
-*  Funcionalidad para bloquear o permitir acceso desde la aplicación.
-*  Ejecución de pruebas completas con todos los roles del sistema.
-
-Semana 2:
-* Todos: Refactorización del código, mejora de funcionalidades y preparación para entrega.
-*  Redacción de manuales de usuario, documentación técnica y resolución de errores.
-
-### Fase 4: Soporte y Mantenimiento
-
-Duración: enero a marzo
-
-* Soporte técnico durante tres meses posteriores a la entrega.
-* Revisión de errores y mejoras menores.
-* Reuniones de seguimiento cada dos semanas.
+* **Fase 1 (hasta 24/10)**: Levantamiento de Requerimientos y Diseño Inicial.
+* **Fase 2 (Noviembre)**: Desarrollo del MVP Funcionalidades Básicas (Backend, conexión Base de Datos, CRUD, Agendamiento).
+* **Fase 3 (Diciembre)**: Consolidación y Entrega del MVP (API entrada/salida, Dashboard básico, Pruebas finales, Documentación).
+* **Fase 4 (Enero a Marzo)**: Soporte y Mantenimiento.
 
 ## Stack Tecnológico Propuesto
 
@@ -285,8 +271,8 @@ Duración: enero a marzo
 ### Frontend
 * **Librería:** React.js.
 
-### Base de Datos
-* **Sistema:** MongoDB.
+### Base de Datos y Backup
+* **Sistema:** MongoDB(Backup Snapshots).
 
 ### Autenticación
 * **Método:** JWT (JSON Web Tokens).
@@ -296,11 +282,21 @@ Duración: enero a marzo
 * **Frontend:** Vercel.
 * **Base de Datos:** MongoDB Atlas.
 
+### Para garantizar la seguridad de los datos del gimnasio:
+
+* **Backups Automáticos:** Copias de seguridad semanales de la base de datos.
+
+* **Plataforma:** Usaremos el servicio integrado de MongoDB Atlas.
+
+* **Retención:** Conservaremos backups de los últimos 30 días.
+
+* **Recuperación:** Posibilidad de restaurar datos en caso de eliminación accidental o fallos del sistema.
+
 ## Reuniones y Seguimiento
 
 * Reunión semanal para revisión de avances y planificación
-* Duración estimada: entre 30 y 45 minutos
-* Canal sugerido: videollamada o reunión presencial
+* **Duración estimada:** entre 30 y 45 minutos
+* **Canal:** videollamada o reunión presencial
 
 # 12. Soporte y Mantenimiento
 
