@@ -255,51 +255,10 @@ Los costos operacionales son mensuales y no están incluidos en los costos del p
 
 ## Roadmap del Proyecto
 
-### Fase 1: Levantamiento de Requerimientos y Diseño Inicial
-
-Duración: hasta el 21 de octubre
-
-* Validación de requerimientos. 
-* Planificación de sprints semanales y reuniones de seguimiento.
-
-### Fase 2: Desarrollo del MVP  Funcionalidades Básicas
-
-Duración: noviembre  
-Entrega del primer prototipo estimada: Finales de noviembre
-
-Semana 1 y 2:
-* Equipo: Configuración del backend conexión a MongoDB.
-* Maquetación inicial del frontend (login, registro, dashboard).
-* Implementación inicial del sistema (simulada) y control de acceso.
-
-Semana 3 y 4:
-* Equipo: Implementación de CRUD de usuarios y membresías con reglas de estado.
-*  Desarrollo de perfil de usuario, historial de accesos y vista de membresía.
-*  Backend de agendamiento y aplicación de reglas de negocio.
-*  Pruebas sobre funcionalidad de agendamiento y validación de restricciones.
-
-### Fase 3: Consolidación y Entrega del MVP
-
-Duración: diciembre  
-Entrega del MVP funcional estimada: inicios diciembre
-
-Semana 1:
-* Equipo: Desarrollo de API para entrada/salida. 
-*  Implementación de dashboard administrativo (funciones básicas).
-*  Funcionalidad para bloquear o permitir acceso desde la aplicación.
-*  Ejecución de pruebas completas con todos los roles del sistema.
-
-Semana 2:
-* Todos: Refactorización del código, mejora de funcionalidades y preparación para entrega.
-*  Redacción de manuales de usuario, documentación técnica y resolución de errores.
-
-### Fase 4: Soporte y Mantenimiento
-
-Duración: enero a marzo
-
-* Soporte técnico durante tres meses posteriores a la entrega.
-* Revisión de errores y mejoras menores.
-* Reuniones de seguimiento cada dos semanas.
+* **Fase 1 (hasta 24/10)**: Levantamiento de Requerimientos y Diseño Inicial.
+* **Fase 2 (Noviembre)**: Desarrollo del MVP Funcionalidades Básicas (Backend, conexión Base de Datos, CRUD, Agendamiento).
+* **Fase 3 (Diciembre)**: Consolidación y Entrega del MVP (API entrada/salida, Dashboard básico, Pruebas finales, Documentación).
+* **Fase 4 (Enero a Marzo)**: Soporte y Mantenimiento.
 
 ## Stack Tecnológico Propuesto
 
@@ -312,8 +271,8 @@ Duración: enero a marzo
 ### Frontend
 * **Librería:** React.js.
 
-### Base de Datos
-* **Sistema:** MongoDB.
+### Base de Datos y Backup
+* **Sistema:** MongoDB(Backup Snapshots).
 
 ### Autenticación
 * **Método:** JWT (JSON Web Tokens).
@@ -323,11 +282,21 @@ Duración: enero a marzo
 * **Frontend:** Vercel.
 * **Base de Datos:** MongoDB Atlas.
 
+### Para garantizar la seguridad de los datos del gimnasio:
+
+* **Backups Automáticos:** Copias de seguridad semanales de la base de datos.
+
+* **Plataforma:** Usaremos el servicio integrado de MongoDB Atlas.
+
+* **Retención:** Conservaremos backups de los últimos 30 días.
+
+* **Recuperación:** Posibilidad de restaurar datos en caso de eliminación accidental o fallos del sistema.
+
 ## Reuniones y Seguimiento
 
 * Reunión semanal para revisión de avances y planificación
-* Duración estimada: entre 30 y 45 minutos
-* Canal sugerido: videollamada o reunión presencial
+* **Duración estimada:** entre 30 y 45 minutos
+* **Canal:** videollamada o reunión presencial
 
 # 12. Soporte y Mantenimiento
 
